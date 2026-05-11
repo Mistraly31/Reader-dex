@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reader-dex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Editor de Información</h1>
+        
+        <div class="controls">
+            <input type="password" id="password" placeholder="Contraseña de cifrado">
+            <button onclick="downloadFile()">Descargar Archivo (.json)</button>
+            <input type="file" id="fileInput" hidden>
+            <button onclick="document.getElementById('fileInput').click()">Subir Archivo</button>
+        </div>
+
+        <textarea id="editor" placeholder="Escribe aquí tu información..."></textarea>
+        
+        <p id="status">Estado: Autoguardado activo</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
